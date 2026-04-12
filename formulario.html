@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido - BurgerX</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Fazer Pedido</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <a href="index.html">Início</a> |
+            <a href="pagina2.html">Cardápio</a> |
+            <a href="contato.html">Contato</a> |
+            <a href="formulario.html">Pedido</a>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <form>
+
+                <h2>Dados do Cliente</h2>
+
+                <label>Nome:</label>
+                <input type="text" name="nome" required>
+                <br><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" minlength="10" required>
+                <br><br>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+                <br><br>
+
+                <label for="cep"> CEP:</label>
+                <input type="text" id="cep" name="cep" pattern="[0-9]{5}-[0-9]{3}" required>
+                <br><br>
+
+                <h2>Escolha seu Pedido</h2>
+
+                <!-- Hambúrguer -->
+                <label>Hambúrguer:</label>
+                <select name="hamburguer">
+                    <option>Nenhum</option>
+                    <option>Cheese Burger - R$ 15,00</option>
+                    <option>X-Burger - R$ 28,00</option>
+                    <option>Bacon Smash - R$ 29,00</option>
+                </select>
+                <br><br>
+
+                <!-- Batata -->
+                <label>Batata:</label>
+                <select name="batata">
+                    <option>Nenhum</option>
+                    <option>Batata com Queijo - R$ 25,00</option>
+                    <option>Batata com Cheddar - R$ 25,00</option>
+                    <option>Batata com Cheddar e Bacon - R$ 25,00</option>
+                    <option>Batata com 4 Queijos - R$ 29,00</option>
+                    <option>Batata com Mussarela e Bacon - R$ 27,00</option>
+                    <option>Batata com Carne Seca - R$ 32,00</option>
+                    <option>Torre de Batata Especial - R$ 42,00</option>
+                </select>
+                <br><br>
+
+                <!-- Bebida -->
+                <label>Bebida:</label>
+                <select name="bebida">
+                    <option>Nenhum</option>
+                    <option>Água Mineral sem Gás - R$ 5,00</option>
+                    <option>Água Mineral com Gás - R$ 4,50</option>
+                    <option>H2O Limão - R$ 5,00</option>
+                    <option>H2O Limoneto - R$ 4,50</option>
+                    <option>Coca-Cola Zero Lata - R$ 5,00</option>
+                    <option>Guaraná Zero Lata - R$ 4,50</option>
+                    <option>Fanta Zero Lata - R$ 6,00</option>
+                    <option>Coca-Cola Lata - R$ 5,00</option>
+                    <option>Guaraná Lata - R$ 4,50</option>
+                    <option>Fanta Uva Lata - R$ 6,00</option>
+                    <option>Fanta Laranja Lata - R$ 6,00</option>
+                    <option>Sprite Lata - R$ 6,00</option>
+                    <option>Coca-Cola 1,5L - R$ 16,50</option>
+                    <option>Coca-Cola Zero 1,5L - R$ 16,50</option>
+                    <option>Guaraná 1,5L - R$ 16,00</option>
+                    <option>Fanta Laranja 1,5L - R$ 17,00</option>
+                    <option>Fanta Uva 1,5L - R$ 17,00</option>
+                    <option>Suco Natural de Laranja - R$ 16,00</option>
+                    <option>Suco Natural de Limão - R$ 17,00</option>
+                    <option>Suco Natural de Abacaxi com Hortelã - R$ 17,00</option>
+                    <option>Suco Natural de Acerola - R$ 17,00</option>
+                    <option>Suco Natural de Morango - R$ 17,00</option>
+                    <option>Suco Natural de Uva - R$ 17,00</option>
+                </select>
+                <br><br>
+
+                <!-- Bebida Alcoólica -->
+                <label>Bebida Alcoólica:</label>
+                <select name="bebida_alcoolica">
+                    <option>Nenhum</option>
+                    <option>Cerveja Brahma - R$ 11,50</option>
+                    <option>Cerveja Budweiser - R$ 11,00</option>
+                    <option>Cerveja Heineken - R$ 12,00</option>
+                    <option>Cerveja Stella Artois - R$ 12,00</option>
+                    <option>Cerveja Corona - R$ 13,00</option>
+                    <option>Caipirinha - R$ 11,50</option>
+                    <option>Mojito - R$ 12,00</option>
+                    <option>Pina Colada - R$ 13,00</option>
+                    <option>Margarita - R$ 13,00</option>
+                    <option>Caipiroska - R$ 13,00</option>
+                    <option>Batida de Limão - R$ 13,00</option>
+                </select>
+                <br><br>
+
+                <!-- Combo -->
+                <label>Combo:</label>
+                <select name="combo">
+                    <option>Nenhum</option>
+                    <option>Cheese Burger + X-Burger + Bacon Smash - R$ 72,00</option>
+                    <option>3 Bacon Smash - R$ 70,00</option>
+                    <option>2 Bacon Smash + Batata + Refrigerante - R$ 67,00</option>
+                    <option>2 X-Burger + Batata com Cheddar e Bacon + Anéis de Cebola - R$ 75,00</option>
+                    <option>4 Cheese Burger + Batata com Cheddar e Bacon + Anéis de Cebola - R$ 82,00</option>
+                </select>
+                <br><br>
+
+                <!-- Promoção -->
+                <label>Promoção:</label>
+                <select name="promocao">
+                    <option>Nenhum</option>
+                    <option>Cheese Burger + Batata + Refrigerante - R$ 29,00</option>
+                    <option>X-Burger + Batata - R$ 35,00</option>
+                    <option>2 Bacon Smash + 2 Batatas + 2 Refrigerantes - R$ 57,00</option>
+                </select>
+                <br><br>
+
+                <!-- Terça de Promoção -->
+                <label>Terça de Promoção:</label>
+                <select name="terca_promocao">
+                    <option>Nenhum</option>
+                    <option>2 Cheese Burger - R$ 25,00</option>
+                    <option>2 X-Burger - R$ 56,00</option>
+                    <option>2 Bacon Smash - R$ 54,00</option>
+                </select>
+                <br><br>
+
+                <!-- Extras -->
+                <h3>Extras</h3>
+                <input type="checkbox" name="extras" value="bacon"> Bacon <br>
+                <input type="checkbox" name="extras" value="queijo"> Queijo <br>
+                <input type="checkbox" name="extras" value="molho"> Molho extra <br>
+                <br>
+
+                <!-- Pagamento -->
+                <h3>Forma de Pagamento</h3>
+                <input type="radio" name="pagamento" value="dinheiro"> Dinheiro <br>
+                <input type="radio" name="pagamento" value="cartao"> Cartão <br>
+                <input type="radio" name="pagamento" value="pix"> Pix <br>
+                <br>
+
+                <!-- Observação -->
+                <label>Observações:</label><br>
+                <textarea name="obs"></textarea>
+                <br><br>
+
+                <input type="submit" value="Enviar Pedido">
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 - BurgerX</p>
+    </footer>
+
+</body>
+
+</html>
