@@ -1,0 +1,100 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0e6e6; /* fundo menos branco */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Menu */
+nav {
+    background-color: #B22222;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Seções */
+section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-left: 5px solid #8B0000;
+    border-radius: 5px;
+
+    /* leve sombra (visual melhor) */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Títulos */
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Botões */
+button, input[type="submit"] {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #cc3700;
+}
+
+/* Formulário */
+input, select, textarea {
+    width: 100%;
+    padding: 6px;
+    margin-top: 3px;
+}
+
+/* Tabelas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #8B0000;
+    color: white;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+/* Rodapé */
+footer {
+    background-color: #8B0000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
