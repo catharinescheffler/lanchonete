@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*BODY*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4fff7;
+    color: #222;
+    line-height: 1.7;
+}
+
+/*HEADER*/
+
+header {
+    background: linear-gradient(135deg, #2e7d4e, #57c17c);
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+/*NAV*/
+
+nav {
+    background-color: #205a37;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 17px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* HOVER NAV */
+
+nav a:hover {
+    color: #95d5b2;
+    transform: scale(1.12);
+}
+
+/*MAIN*/
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+/*CARD PRINCIPAL */
+
+section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 22px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* HOVER CARD */
+
+section:hover {
+    transform: translateY(-4px);
+}
+
+/*TÍTULO*/
+
+section h2 {
+    color: #2e7d4e;
+    font-size: 42px;
+    margin-bottom: 35px;
+}
+
+/*IMAGENS*/
+
+section img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    border-radius: 25px;
+    margin: 25px auto;
+    display: block;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+    transition: 0.4s;
+}
+
+/* HOVER IMAGEM */
+
+section img:hover {
+    transform: scale(1.03);
+}
+
+/*TEXTOS*/
+
+section p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+section strong {
+    color: #205a37;
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #205a37;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 15px;
+}

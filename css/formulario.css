@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*BODY*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4fff7;
+    color: #222;
+    line-height: 1.7;
+}
+
+/*HEADER*/
+
+header {
+    background: linear-gradient(135deg, #2e7d4e, #57c17c);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+ header img {
+    width: 320px;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+ 
+
+/*NAV*/
+
+nav {
+    background-color: #205a37;
+    padding: 18px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 17px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+/* HOVER NAV */
+
+nav a:hover {
+    color: #95d5b2;
+    transform: scale(1.12);
+}
+
+/*MAIN*/
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 25px;
+}
+
+/*FORMULÁRIO*/
+
+section {
+    background-color: white;
+    padding: 40px;
+    border-radius: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/*TÍTULOS*/
+
+h2 {
+    color: #2e7d4e;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #205a37;
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/*LABELS*/
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #205a37;
+}
+
+/*INPUTS*/
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* EFEITO INPUT */
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #57c17c;
+    box-shadow: 0 0 5px rgba(87, 193, 124, 0.5);
+}
+
+/* TEXTAREA */
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/*CHECKBOX E RADIO*/
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+    margin-bottom: 12px;
+}
+
+/*BOTÃO ENVIAR*/
+
+input[type="submit"] {
+    background-color: #2e7d4e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+/* HOVER BOTÃO */
+
+input[type="submit"]:hover {
+    background-color: #205a37;
+    transform: scale(1.05);
+}
+
+/*FOOTER*/
+
+footer {
+    background-color: #205a37;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    font-size: 15px;
+}
+/*HOVER INPUTS*/
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="tel"]:hover,
+select:hover,
+textarea:hover {
+    background-color: #f0fff5;
+    border-color: #57c17c;
+}
+
+/*HOVER LABELS*/
+
+label:hover {
+    color: #2e7d4e;
+    transition: 0.3s;
+}
+
+/*HOVER CHECKBOX E RADIO*/
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/*HOVER SECTION*/
+
+section:hover {
+    box-shadow: 0 6px 18px rgba(46, 125, 78, 0.15);
+    transition: 0.3s;
+}
+
+/*HOVER TÍTULOS*/
+
+h2:hover,
+h3:hover {
+    color: #57c17c;
+    transition: 0.3s;
+}
