@@ -23,6 +23,7 @@ body {
     background-color: var(--cinza);
     color: var(--texto);
     line-height: 1.7;
+    overflow-x: hidden;
 }
 
 /* menu de navegação */
@@ -79,7 +80,7 @@ header {
 
 .menu {
     display: flex;
-    gap: 30px;
+    gap: 50px;
     list-style: none;
 }
 
