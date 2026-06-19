@@ -129,3 +129,27 @@ footer {
     margin-top: 50px;
     font-size: 15px;
 }
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 160px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .botao-header {
+        padding: 10px 18px;
+    }
+
+}

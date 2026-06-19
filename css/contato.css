@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --verde-principal: #2e7d4e;
+    --verde-claro: #56c271;
+    --branco: #ffffff;
+}
+
 /*BODY*/
 
 body {
@@ -13,27 +19,9 @@ body {
     line-height: 1.7;
 }
 
-/*HEADER*/
-header {
-    background: linear-gradient(135deg, #2e7d4e, #57c17c);
-    color: white;
-    text-align: center;
-    padding: 40px 20px;
-}
-
- header img {
-    width: 320px;
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px auto;
-}
- 
-
-/*NAV*/
+/* menu de navegação */
 
 nav {
-    background-color: #205a37;
     padding: 18px;
     text-align: center;
     position: sticky;
@@ -50,12 +38,78 @@ nav a {
     transition: 0.3s;
 }
 
-/* HOVER NAV */
 
 nav a:hover {
     color: #95d5b2;
     transform: scale(1.12);
 }
+
+/* cabeçalho */
+
+header {
+    background: linear-gradient(
+        135deg,
+        var(--verde-principal),
+        var(--verde-claro)
+    );
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 5%;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 140px;
+    display: block;
+}
+
+/* menu do header */
+
+.menu {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+}
+
+
+.menu a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.menu a:hover {
+    color: #d7ffe5;
+}
+
+
+.botao-header {
+    background-color: var(--branco);
+    color: var(--verde-principal);
+
+    padding: 8px 14px;
+    font-size: 14px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.botao-header:hover {
+    transform: scale(1.05);
+}
+
 
 /*MAIN*/
 
@@ -130,4 +184,28 @@ footer {
     padding: 25px;
     margin-top: 40px;
     font-size: 15px;
+}
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .botao-header {
+        padding: 10px 18px;
+    }
+
 }
